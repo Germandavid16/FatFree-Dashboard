@@ -1,0 +1,424 @@
+BODY {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	background-color: #FFF;
+}
+
+#menusCont { 
+	float: center;
+	width: 581px;
+	position: relative;
+	top: 14px
+	}
+	
+#menusCont #topmenus  {
+	float: center;
+	width: 581px;
+	position: relative;
+	bottom: 2px
+	}
+	
+#menusCont #topmenus A {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 10px;
+	color: #328F79;
+	font-weight: bold;	
+}
+	
+#menusCont #topmenus A:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 10px;
+	color: #ffffff;
+	font-weight: bold;
+	width: auto;
+	background: #F18168;
+	height: 40px;
+	z-index: 100;
+	}	
+	
+#menusCont #botmenus {
+	float: center;
+	width: 581px;
+	position: relative;
+	bottom: 1px
+	}
+
+#menusCont #botmenus A {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 10px;
+	color: #17A1C2;
+	font-weight: bold;
+	}
+
+#menusCont #botmenus A:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 10px;
+	color: #ffffff;
+	font-weight: bold;
+	width: auto;
+	background: #F18168;
+	}
+
+#botmenusPort {
+	float: center;
+	width: 581px;
+	position: relative;
+	top: -3px
+	}
+
+#botmenusPort A {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 11px;
+	color: #707A83;
+	font-weight: bold;
+	}
+
+#botmenusPort A:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 11px;
+	color: #ffffff;
+	font-weight: bold;
+	width: auto;
+	background: #F18168;
+	}
+
+#portCont {
+	float: left;
+	width: 811px;
+	height: 140px;
+}
+
+#portCont #clientL {
+	float: left;
+	width: 260px;
+	height: auto;
+	border-width:.5px; 
+	border-color: #02AA9B;
+	border-bottom: solid;
+	border-right: solid;
+	border-width: thin;
+
+}
+
+#portCont #clientL .urlL{
+	font-family:  Arial, Helvetica, sans-serif;
+	margin-right: 15px;
+	text-decoration: none;
+	font-size: 11px;
+	color: #9C9D9E;
+	font-weight: bold;
+	text-align: right;
+}
+
+
+#logo {
+	text-align: left;
+	float: left;
+	width: 230px;
+	height: 140px;
+	background-image: url(imgs/logo230x140.jpg);
+}
+
+
+
+#topNavTop {
+	float: left;
+	width: 420px;
+	height: 58px;
+	background-image: url(imgs/greenGradient10x58.jpg);
+	background: repeat-x;
+	text-align: center;
+}
+
+#lineGreen {
+	background-image: url(imgs/greenLine2x1.jpg);
+	background: repeat-x;
+	text-align: center;
+	height: 2px;
+}
+
+#whatWeDo {
+	background: url(imgs/servicesText296x20.jpg);
+	background-position: center;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-color: white;
+}
+
+#sidebar H1 {
+	margin: 14px 0 8px;
+	font-size: 14px;
+	color: #00337B;
+	background: transparent url(img/h1_sidebar.gif) no-repeat bottom left;
+}
+#sidebar H1 SPAN.date {
+	margin-left: 40px;
+	font-size: 10px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #00265D;
+}
+#sidebar H2 {
+	margin: 0;
+	padding: 5px 0 4px 15px;
+	font-size: 12px;
+	color: #003073;
+	background: transparent url(img/cube.gif) no-repeat 0 9px;
+}
+#sidebar H2 A {
+	color: #003073;
+}
+/* font */
+#sidebar P, UL, OL {
+	font: 11px/12px Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+#sidebar P {
+	margin: 0 0 4px 15px;
+}
+#sidebar UL {
+	margin: 0 0 5px 15px;
+}
+#sidebar UL LI {
+	padding: 0 0 5px 15px;
+	background: transparent url(img/cube_sml.gif) no-repeat 0 3px;
+	list-style-type: none;
+}
+#sidebar UL.tel {
+	font-weight: bold;
+	color: #003073;
+}
+#sidebar OL {
+	margin: 0 0 15px 15px;
+	padding: 0 0 0 10px;
+}
+#sidebar OL LI {
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+#sidebar A.read-more {
+	color: #001B41;
+	font-style: italic;
+}
+#sidebar A.read-more:visited {
+	color: #001B41;
+}
+
+#footer-trg {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-left: 40px;
+	font-size: 10px;
+	color: #328F79;
+}
+
+#footer-space {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	height: 21px;
+	margin-left: 40px;
+	font-size: 10px;
+	color: #328F79;
+}
+
+#footer-menub A {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 10px;
+	color: #1597B6;
+	font-weight: bold;
+	
+}
+
+#footer-trg A {
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 12px;
+	color: #000;
+}
+
+
+#footer {
+	clear: both;
+	border-top: 1px solid #011A41;
+	border-bottom: 1px solid #011A41;
+	padding: 15px;
+	text-align: center;
+	background-color: #0E428B;
+}
+#footer P {
+	margin: 0;
+	font-size: 70%;
+	letter-spacing: 1px;
+	color: #FFF;
+}
+#footer A {
+	color: #CFD9E8;
+}
+#footer IMG.bbb {
+	display: none;
+	position: absolute;
+	right: 10px;
+	margin-top: 5px;
+}
+/*
+about.html
+*/
+#footer #info {
+	width: 470px;
+	margin: 15px auto;
+	border: 1px solid #CFD9E8;
+	padding: 3px 6px;
+	color: #0E428B;
+	background-color: #9FB3D1;
+	font-size: 10px;
+	letter-spacing: 1px;
+}
+
+#info-trg {
+	color: #0E428B;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	letter-spacing: 1px;
+}
+
+
+DL.seminar {
+	clear: both;
+	float: left;
+	width: 405px;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+DL.seminar DT {
+	float: left;
+	width: 135px;
+	margin: 0;
+	padding: 0;
+}
+DL.seminar DT STRONG {
+	font-size: 90%;
+}
+DL.seminar DT SPAN.place {
+	display: block;
+	font-size: 75%;
+}
+DL.seminar DD {
+	float: right;
+	width: 270px;
+	margin: 0;
+	padding: 0;
+}
+DL.seminar DD H2 {
+	margin: 0 0 1em !important;
+}
+DL.seminar DD P {
+	margin: 0 0 1em !important;
+}
+
+.timeline {
+	float: left;
+	width: 710px;
+	margin: 10px 0 15px;
+}
+.timeline DL {
+	float: left;
+	width: 710px;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px dashed #D9E1EB;
+}
+.timeline DL DT {
+	float: left;
+	width: 105px;
+	margin: 0;
+	padding: 7px 5px 15px 0;
+	font: bold 16px Georgia;
+	color: #003073;
+}
+.timeline DL DD {
+	float: right;
+	width: 590px;
+	margin: 0;
+	padding: 10px 0 15px 5px;
+	border-left: 1px solid #00337B;
+	font-size: 13px;
+}
+
+.SearchForm {
+		background: #ffffff;
+		color: #000000;
+		font-family: Helvetica, SansSerif;
+		font-size: 12px;
+		border: 1px #cccccc solid
+		}
+
+.form {
+	font-family:arial,helvetica,sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	color:#4D6966;
+	background-color: #CFEDEF;
+	height: 9px;
+	border: 1px solid #CFEDEF;
+	text-align: left;
+	vertical-align: middle;
+
+} 
+
+.formButton {
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-weight: bold;
+	font-size:9px;
+	width:45px;
+	height:18px;
+	color:#4D6966;
+
+}
+
+.sLinks {
+	font-family: helvetica,sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+}
+
+
+.sLinks2 {
+	font-family: helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+}
+
+
+.dy_shipping {
+	padding: 0;
+	font-weight: bold;
+	font-size: 14px;
+	color: #000;
+	border: 1px solid #FFFFFF;
+	background-color: #F4F9FF;
+}
+.dy_insurence {
+	padding: 0;
+	font-weight: bold;
+	font-size: 14px;
+	color: #000;
+	border: 1px solid #FFFFFF;
+	background-color: #F4F9FF;
+}
+.dy_total {
+	padding: 0;
+	font-weight: bold;
+	font-size: 16px;
+	color: #036;
+	border: 1px solid #FFFFFF;
+	background-color: #F4F9FF;
+}

@@ -1,0 +1,358 @@
+BODY {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	background-color: #FFF;
+}
+
+
+#topmenus  {
+	float: center;
+	width: 450px;
+	left: 50px;
+	}
+	
+#topmenus A {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 10px;
+	color: #328F79;
+	font-weight: bold;	
+}
+	
+#topmenus A:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 10px;
+	color: #ffffff;
+	font-weight: bold;
+	width: auto;
+	background: #F18168;
+	height: 16px;
+	z-index: 100;
+	}
+
+#botmenus {
+	width: 375px;
+	position: relative;
+	left: 0px;
+	}
+
+#botmenus A {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 10px;
+	color: #17A1C2;
+	font-weight: bold;
+	}
+
+#botmenus A:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 10px;
+	color: #ffffff;
+	font-weight: bold;
+	width: auto;
+	background: #F18168;
+	}
+
+
+#botmenusPort {
+	float: center;
+	width: 520px;	
+	}
+
+#botmenusPort A {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 10px;
+	color: #707A83;
+	font-weight: bold;		
+	}
+
+#botmenusPort A:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 10px;
+	color: #ffffff;
+	font-weight: bold;
+	width: auto;
+	background: #F18168;
+	}
+
+#portCont {
+	float: left;
+	width: auto;
+	margin-left: 27px;
+}
+
+#domT {
+	float: left;
+	width: auto;
+	margin-left: 27px;
+	margin-top: 17px;
+	}
+
+#domT .botTxt {
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 10px;
+	color: #4D565A;
+	font-weight: normal;
+	text-align: left;
+}
+
+#domT .domHead{
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 15px;
+	color: #4D565A;
+	font-weight: normal;
+	text-align: left;
+}	
+
+#domT .domTLink {
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 10px;
+	color: #F95604;
+	font-weight: normal;
+	text-align: left;
+}
+
+#domT .domTLink:hover {
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+	font-size: 10px;
+	color: #03AA98;
+	font-weight: normal;
+	text-align: left;
+}
+
+#portCont .pLink{
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-decoration: none;
+	font-size: 12px;
+	color: #4D565A;
+	font-weight: normal;
+	text-align: left;
+}
+
+#portCont .pLink:hover {
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-decoration: none;
+	font-size: 12px;
+	color: #F95604;
+	font-weight: normal;
+	text-align: left;
+}
+
+#portCont #clientL {
+	float: left;
+	width: 250px;
+	height: auto;
+}
+
+#portCont #clientL .urlL{
+	font-family:  Arial, Helvetica, sans-serif;
+	margin-right: 15px;
+	text-decoration: none;
+	font-size: 11px;
+	color: #9C9D9E;
+	font-weight: bold;
+	text-align: right;
+}
+
+#portCont #clientL .urlL:hover {
+	font-family:  Arial, Helvetica, sans-serif;
+	margin-right: 15px;
+	text-decoration: none;
+	font-size: 13px;
+	color: #F95604;
+	font-weight: bold;
+	text-align: right;
+}
+
+#portCont #stagingA {
+	float:left;
+	width: 520px;
+	height: auto;
+	margin-top: 22px;
+	margin-bottom: 8px;
+}
+
+
+#portCont #domL {
+	float: left;
+	width: 489px;
+	height: auto;
+	margin-bottom: 10px;
+	margin-right: 10px;
+
+}
+
+#portCont #domL .domLink{
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-decoration: none;
+	font-size: 11px;
+	color: #4D565A;
+	font-weight: bold;
+	text-align: left;
+}
+
+#portCont #domL .domLink:hover {
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-decoration: none;
+	font-size: 11px;
+	color: #F95604;
+	font-weight: bold;
+	text-align: left;
+}
+
+#portCont #domL .pLink{
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-decoration: none;
+	font-size: 12px;
+	color: #4D565A;
+	font-weight: normal;
+	text-align: left;
+}
+
+#portCont #domL .pLink:hover {
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-decoration: none;
+	font-size: 12px;
+	color: #F95604;
+	font-weight: normal;
+	text-align: left;
+}
+
+#portCont #domT {
+	float: left;
+	width: 500px;
+	height: auto;
+	margin-bottom: 15px;
+	}
+
+#portCont #domT .domTxt{
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 10px;
+	color: #4D565A;
+	font-weight: normal;
+	text-align: left;
+}
+
+#portCont #domT .domHead{
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 15px;
+	color: #4D565A;
+	font-weight: normal;
+	text-align: left;
+}	
+
+
+
+
+#portCont #domT .domTLink{
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 10px;
+	color: #F95604;
+	font-weight: normal;
+	text-align: left;
+}
+
+#portCont #domT .domTLink:hover{
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+	font-size: 10px;
+	color: #03AA98;
+	font-weight: normal;
+	text-align: left;
+}
+
+#portCont #domS {
+	float: left;
+	height: 125px;
+	margin-top: 1px;
+	background-image: url(images/bg_bottom54Hbc.jpg);
+	position: relative;
+	left: -20px
+}
+
+#portCont #domS .lang {
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 9px;
+	color: #4D565A;
+	font-weight: normal;
+	text-align: left;
+}
+
+.SearchForm {
+		background: #ffffff;
+		color: #000000;
+		font-family: Helvetica, SansSerif;
+		font-size: 12px;
+		border: 1px #cccccc solid
+		}
+
+.form {
+	font-family:arial,helvetica,sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color:#4D6966;
+	background-color: #CFEDEF;
+	height: 19px;
+	border: 1px solid #CFEDEF;
+	text-align: left;
+	vertical-align: middle;
+
+} 
+
+.formButton {
+	font-family: arial,helvetica,sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	width:125px;
+	height:20px;
+	color:#44508B;
+	text-align: center;
+	background-color: #E7EBFF;
+	border: 1px solid #E7EBFF;
+
+}
+
+
+.domHead {
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 32px;
+	color: #4D565A;
+	font-weight: normal;
+	text-align: left;
+}
+
+.botTxt {
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 11px;
+	color: #4D565A;
+	font-weight: normal;
+	text-align: left;
+}

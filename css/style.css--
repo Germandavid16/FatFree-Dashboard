@@ -1,0 +1,553 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	/*border: 0;*/
+	/*outline: 0;*/
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.err {
+    color: #FF0000 !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*button::-moz-focus-inner 
+{
+  border: 0;
+}*/
+
+/*a img { border: none; }*/
+/*fieldset { border: none; padding: 0px;}*/
+
+/*input,textarea,button { outline:none !important;}*/
+
+input[type="submit"], button { cursor: pointer; }
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+/*:focus {
+	outline: 0;
+}*/
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+* {
+    /*outline-style: none;*/
+}
+
+button {
+    cursor: pointer;
+}
+
+.clr {
+	clear: both;
+	width: 0px;
+	height: 0px;
+}
+
+.align_center {
+    text-align: center;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 400;
+    color: #4D565A; 
+    padding: 10px 20px 10px 20px;
+}
+
+input, textarea {
+   font-size: 16px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+}
+
+button {
+    font-size: 16px;
+}
+
+.clear {
+    clear: both;
+}
+
+.menu {
+    padding-top: 28px;
+    overflow: hidden;
+}
+.menu ul {
+    list-style: none;
+    overflow: hidden;
+}
+.menu li {
+    float: left;
+    position: relative;
+}
+.menu li + li:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 1px;
+    height: 32px;
+    background: #328F79;  
+}
+.menu .item {
+    padding: 5px 15px;
+    display: block;
+    text-decoration: none;
+    color: #328F79;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 1px;
+}
+.menu li.active .item, .menu li.current .item {
+    font-weight: bold;
+}
+.menu .item:hover {
+    color: #C04A4A;
+}
+.submenu {
+    overflow: hidden;
+}
+.submenu ul {
+    list-style: none;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+.submenu li {
+    float: left;
+    position: relative;
+}
+.submenu .item {
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+    color: #03a897;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.submenu .item:hover, .submenu li.active .item, .submenu li.current .item {
+    color: #C04A4A;
+    text-decoration: none;
+}
+
+.submenu1 li.active .item, .submenu1 li.current .item {
+    text-decoration: none;
+}
+.submenu1 .item:hover {
+    color: #C04A4A;
+    text-decoration: none;
+}
+.submenu1 {
+    padding-top: 5px;    
+}
+.submenu li + li:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8px;
+    width: 1px;
+    height: 19px;
+    background: #03a897;  
+}
+.submenu1 .item {
+    padding: 5px 10px;
+}    
+.submenu2 {
+    float: left;
+    padding-left: 3px;
+}
+.submenu2 ul {
+    margin-top: 0px;
+}    
+.submenu2 .item {
+    padding: 0 8px 0px 8px;
+    font-size: 14px;
+}
+.submenu2 li + li:after {
+    top: 3px;
+    height: 15px;
+}
+.submenu3 ul {
+    margin-top: 0px;
+}    
+.submenu3 {
+    float: left;
+    margin-left: 15px;
+}
+.submenu3 li + li:after {
+    top: 3px;
+    height: 15px;
+}
+.submenu3 .item {
+    padding: 0 8px 0px 8px;
+    font-size: 14px;
+}
+
+.messageCommon {
+    padding: 10px;
+    margin: 10px;
+    background: #dfd;
+    overflow:auto;
+    max-height: 300px;
+    font-size: 14px;
+}
+.messageError {
+    background: #fdd;
+}
+
+.mainbar {
+    background: url("/img/bg_top.jpg") repeat-x;
+    overflow: hidden;
+}
+.mainbar .logo {
+    float: left;
+}
+.mainbar .bar {
+    float: left;
+}
+
+.secondbar {
+    overflow: hidden;
+}
+
+.content {
+    padding: 10px 20px 40px 20px;
+}
+.formTable input {
+    border: 1px solid #CFEDEF;
+    background: #CFEDEF;
+    width: 300px;
+    padding: 2px 5px;
+}
+.formTable input:hover {
+    background: #fff;
+}
+
+.formTable {
+    margin-top: 10px;
+}
+.formTable td {
+   padding: 2px 0px; 
+}
+.formTable .label {
+    text-align: right;
+    padding-right: 10px;
+}
+.formTable .button {
+    padding: 20px 0px;
+    text-transform: uppercase;
+}
+button {
+    color: #44508B;
+    background-color: #E7EBFF;
+    border: 1px solid #E7EBFF;
+    padding: 5px 20px;
+}
+button:hover {
+    border: 1px solid #44508B;    
+}
+.formTable .links {
+    font-size: 14px;
+    padding-top: 20px;
+}
+.formTable .links a {
+    color: #4D565A;
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 20px;
+}
+.formTable .links a:hover {
+    color: #F95604;
+}
+
+.dataTable {
+    font-size: 16px;
+    padding: 10px 0px;
+}
+.dataTable a {
+    text-decoration: none;
+    color: #666;
+    font-size: 20px;
+}
+.dataTable a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+.dataTable tr td {
+    padding: 5px;
+    background: #eaeff5;
+    border-collapse: collapse;
+    font-size: 14px;    
+}
+.dataTable tr:nth-child(odd) td {
+    background: #f5f5ff;
+}
+.dataTableDiff tr:nth-child(odd) td {
+    background: #eaeff5;
+}
+.dataTable tr td.changed {
+    background: #f5f5aa;
+}
+.dataTable tr td.added {
+    background: #daf5cf;
+}
+.dataTable tr td.deleted {
+    background: #f5dacf;
+}
+.dataTable tr.head td {
+    font-size: 14px;
+    background: #fff;
+    color: #444466;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    border-bottom: none;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+.dataTable tr td .valueOld {
+    color: #888;
+}
+
+.diffHelp {
+    padding-left: 0px;
+}
+.diffHelp table {
+    border: 1px solid #03a897;
+}
+.diffHelp table tr td {
+    padding: 2px;
+    vertical-align: middle;
+}
+.diffHelp .diffHelpAdded {    
+    background: #daf5cf;
+}
+.diffHelp .diffHelpDeleted {
+    background: #f5dacf;    
+}
+.diffHelp .diffHelpChanged {
+    background: #f5f5aa;    
+}
+.diffHelp .valueOld {
+    color: #888;
+}
+
+.footer {
+    background: url("/img/bg_bottom.jpg") repeat-x;
+    min-height: 140px;
+    padding: 17px 27px;
+    box-sizing: border-box;
+}
+.footer .copyright {
+    font-size: 10px;
+    color: #4D565A;    
+}
+
+.pageBlock {
+    padding: 10px 0px;
+    padding: 10px 10px;
+    background: #f8f8ff;
+    border-radius: 10px;
+}
+.pageBlock .blockTitle {
+    font-size: 18px;
+    padding: 0px 0px;
+    cursor: pointer;
+    color: #444;
+}
+.pageBlock .blockTitle:hover {
+    color: #000;
+}
+.pageBlock .blockTitle .fa {
+    font-size: 16px;
+    margin-left: 8px;
+}    
+.pageBlock .blockContent {
+    display: none;
+}
+.pageBlock .blockDescription {
+}
+.pageBlock .formField {
+    padding: 5px 0px;
+}
+.pageBlock .button {
+    padding: 5px 0px;
+}
+
+.dontAskConfirmation {
+    margin-top: 20px;
+}
+.dontAskConfirmation input {
+    vertical-align: middle;
+}
+.dontAskConfirmation label {
+    vertical-align: middle;
+}
+
+.rosterBar {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    font-size: 14px;
+}
+.rosterBar .rosterBarItem {
+    vertical-align: middle;
+}
+.rosterBar .rosterBarItem.totalCount {
+    color: #03a897;
+}    
+.rosterBar .rosterBarItem.totalCount span {
+    color: #C04A4A;
+}
+.rosterBar .rosterBarItem.totalCount span.count {
+    font-size: 18px;
+}
+.rosterBar .groupSections {
+    color: #3e8f85;
+    padding-top: 10px;
+}
+.rosterBar .groupSections table {
+    border-collapse: collapse;
+}
+.rosterBar .groupSections .section {
+    border: 1px solid #3e8f85;
+}
+.rosterBar .groupSections .section {
+    padding: 5px 10px;
+}
+.rosterBar .groupSections .section .caption {
+    color: #C04A4A;
+}
+.rosterBar .groupSections .section .groups {
+    overflow: hidden;
+}
+.rosterBar .groupSections .section .groups .group {
+}
+.rosterBar .groupSections .section .groups .group .item {
+    text-decoration: none;
+    color: #3e8f85;
+}
+.rosterBar .groupSections .section .groups .group .item:hover {
+    color: #C04A4A;
+}
+.rosterBar .groupSections .section .groups .group.active .item {
+    color: #C04A4A;
+}
+.rosterBar .groupSections .section .groups .group .item .count {
+    padding-left: 5px;
+    color: #C04A4A;
+}
+
+.toolbar {
+    padding-top: 5px;
+}
+.toolbar .item {
+    display: inline-block;
+    margin-right: 20px;
+}
+.toolbar .item .button {
+   background: none;
+   text-decoration: none;
+   padding: 0;
+   font-size: 14px;
+   border: none;
+   color: #3e8f85;
+   cursor: pointer;
+   text-transform: uppercase;
+   display: block;
+   text-align: center;   
+}
+.toolbar .item.clearForm .button:before {
+    content: "";
+    display: block;
+    height: 50px;
+    width: 46px;
+    background: url("/img/trash.jpg") no-repeat center;
+}
+.toolbar .item.downloadForm .button:before {
+    content: "";
+    display: block;
+    height: 50px;
+    width: 71px;
+    background: url("/img/excel.jpg") no-repeat center;
+}
+.toolbar .item.comp .button:before {
+    content: "";
+    display: block;
+    height: 50px;
+    width: 54px;
+    background: url("/img/comp.jpg") no-repeat center;
+}
+.toolbar .item.clearForm .button:hover:before, .toolbar .item.clearForm.active .button:before {
+    background: url("/img/trash_over.jpg") no-repeat center;
+}
+.toolbar .item.downloadForm .button:hover:before, .toolbar .item.downloadForm.active .button:before {
+    background: url("/img/excel_over.jpg") no-repeat center;
+}
+.toolbar .item.comp .button:hover:before, .toolbar .item.comp.active .button:before {
+    background: url("/img/comp_over.jpg") no-repeat center;
+}
+.toolbar .item .button:hover, .toolbar .item.active .button {
+    color: #e77775;
+}
+
+.page_login h1 {
+    padding: 0px;
+}
+.page_login .formTable .label {
+    text-align: left;
+}
+.page_password_recovery h1 {
+    padding: 0px;
+}
+.page_password_recovery .formTable .label {
+    text-align: left;
+}
+.page_password_recovery .formTable .captcha {
+    padding-top: 10px;
+}
+.inline {
+    display: inline-block;
+}
+.mg_auto{
+    margin: auto !important;
+}

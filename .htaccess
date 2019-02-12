@@ -1,20 +1,24 @@
 <IfModule mod_rewrite.c>
-    RewriteEngine On
-    #RewriteBase /your_project/
+    RewriteEngine on
+    RewriteCond %{HTTPS} off
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+    RewriteCond %{HTTPS_HOST} ^lindocarros\.com$ [OR]
+    RewriteCond %{HTTPS_HOST} ^www\.lindocarros\.com$
+    RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+    RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+    RewriteRule ^/?$ "https\:\/\/lindocarros\.com\/login" [R=301,L]
 
-    #Removes access to the system folder by users.
-    #Additionally this will allow you to create a System.php controller,
-    #previously this would not have been possible.
-    #'system' can be replaced if you have renamed your system folder.
-    RewriteCond %{REQUEST_URI} ^system.*
-    RewriteRule ^(.*)$ /index.php?/$1 [L]
-
-    #Checks to see if the user is attempting to access a valid file,
-    #such as an image or css document, if this isn't true it sends the
-    #request to index.php
+    RewriteCond %{REQUEST_FILENAME} !-l
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ index.php?/$1 [L]
+    RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+    RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+    RewriteRule .* index.php [L,QSA]
+    RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+    RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
+    RewriteRule .* - [E=noabort:1]
+    RewriteRule .* - [E=noconntimeout:1]
 </IfModule>
 
 <IfModule !mod_rewrite.c>

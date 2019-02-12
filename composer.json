@@ -1,0 +1,11 @@
+{
+	"name": "Patroman",
+	"description": "Patient roster management",
+	"config": {
+		"vendor-dir": "lib"
+	},
+	"require": {
+		"bcosca/fatfree-core": "^3.6.1",
+		"phpoffice/phpexcel": "^1.8.1"
+	}
+}
